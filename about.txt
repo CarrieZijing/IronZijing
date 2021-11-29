@@ -1,1 +1,11 @@
-initial text
+I'm Zijing.
+I'm from Beijing, China.
+I was a business developer in an IT startup, now I'm trying to survive till Xmas in Ironhack DA bootcamp.
+I had few experience with tech & data, R language, python, sql, excel.
+I want a change in my career, using data to help make a better business decision.
+Destiny brought me to Ironhack?
+I expect to learn as much as possible in Ironhack, all related and not limited to data analytics.
+I will find some practical opportunity to apply my skills in a real business scenario.
+Industry not quite limited, IT, FMCG, banking, finance, whatever
+Future role, emmm not quite clear yet, but definitely using analytics skill and combine with business insight. 
+Career goal: well, be rich and free? ahaha
