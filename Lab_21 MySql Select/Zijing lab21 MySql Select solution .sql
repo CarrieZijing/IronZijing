@@ -53,6 +53,8 @@ ON ta.title_id = t.title_id
 JOIN publications.sales AS s
 ON s.title_id = t.title_id;
 
+SELECT * FROM publications.bestseller;
+
 SELECT MIN(`AUTHOR ID`), MIN(`AUTHOR lAST NAME`), MIN(`FIRST NAME`),SUM(TOTAL) AS "TOTAL TITLES QTY SOLD"
 FROM publications.bestseller
 GROUP BY `AUTHOR ID`
@@ -74,15 +76,6 @@ LEFT JOIN publications.sales AS s
 ON s.title_id = t.title_id;
 
 SELECT * FROM publications.title_QTY_sold_list;
-
-SELECT `AUTHOR ID`, MIN(`AUTHOR lAST NAME`), MIN(`FIRST NAME`), SUM(TOTAL) AS `TOTAL_QTY_SOLD`
--- 	CASE 
--- 		WHEN SUM(TOTAL) = null THEN 0 
--- 		ELSE SUM(TOTAL)
--- 	END
-FROM publications.title_QTY_sold_list
-GROUP BY `AUTHOR ID`
-ORDER BY `TOTAL_QTY_SOLD` DESC;
 
 SELECT `AUTHOR ID`, MIN(`AUTHOR lAST NAME`), MIN(`FIRST NAME`), SUM(COALESCE(`TOTAL`, 0)) AS `TOTAL_QTY_SOLD`
 FROM publications.title_QTY_sold_list
