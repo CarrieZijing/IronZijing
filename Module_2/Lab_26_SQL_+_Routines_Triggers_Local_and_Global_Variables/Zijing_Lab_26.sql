@@ -181,4 +181,4 @@ END AS emp_status
 FROM t_employees e
 JOIN t_dept_emp d
 ON e.emp_no = d.emp_no
-LIMIT 500;
+LIMIT 100;
